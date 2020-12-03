@@ -1,3 +1,9 @@
+.tree{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .tree ul {
   padding-top: 20px;
   position: relative;

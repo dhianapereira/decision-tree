@@ -8,28 +8,42 @@
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
     <link rel="stylesheet" type="text/css" href="./styles/main-page.css" />
     <link rel="stylesheet" type="text/css" href="./styles/decision_tree.css" />
-    <script type="text/javascript" src="../src/decision-tree.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/decision-tree.js"></script>
   </head>
 
-  <body>
+  <body onload="loadData();">
     <div id="main-page">
       <div id="container">
-        <label>Paciente</label>
-        <div id="testingItem"></div>
-        <br />
-        <label>Predição da Árvore de Decisão</label>
-        <div id="decisionTreePrediction"></div>
-        <br />
-        <br />
-        <label>Árvore de Decisão</label>
-        <div class="tree" id="displayTree">
-          <script type="text/javascript" src="./scripts/script.js"></script>
+        <table>
+          <tr>
+            <th>Idade</th>
+            <th>Menopausa</th>
+            <th>Tamanho do tumor</th>
+            <th>Grau</th>
+            <th>Mama</th>
+            <th>Mama - Quadril</th>
+          </tr>
+          <tr id="testingItem">
+
+          </tr>
+        </table>
+
+        <span>
+          <label>Predição da Árvore de Decisão: </label>
+          <label class="different-color" id="decisionTreePrediction"> </label>
+        </span>
+
+        <div class="tree">
+          <label>Árvore de Decisão -> </label>
+          <div id="displayTree"></div>
         </div>
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="./scripts/script.js"></script>
 </html>

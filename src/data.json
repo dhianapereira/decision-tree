@@ -1,0 +1,38 @@
+[
+  {
+    "class": "no-recurrence-events",
+    "age": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49],
+    "menopause": "premeno",
+    "tumorSize": [20, 21, 22, 23, 24],
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49],
+    "menopause": "premeno",
+    "tumorSize": [20, 21, 22, 23, 24],
+    "degMalig": 2,
+    "breast": "left",
+    "breastQuad": "left_low"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": [60,61,62,63,64,65,66,67,68,69],
+    "menopause": "ge40",
+    "tumorSize": [15,16,17,18,19],
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "left_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age":  [40, 41, 42, 43, 44, 45, 46, 47, 48, 49],
+    "menopause": "premeno",
+    "tumorSize": [0,1,2,3,4],
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_low"
+  }
+]
