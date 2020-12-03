@@ -1,0 +1,28 @@
+#main-page {
+  display: flex;
+
+  min-height: 100vh;
+  margin: auto;
+}
+
+#container {
+  background: white;
+  border: 1px solid #d3e2e5;
+  color: #2e2866;
+
+  margin: 6.4rem auto;
+  padding: 8rem;
+
+  width: 90rem;
+
+  border-radius: 2rem;
+  overflow: hidden;
+
+  font: 600 1.8rem/1 "Nunito", sans-serif;
+
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr);
+  column-gap: 2.6rem;
+  align-items: center;
+  justify-content: center;
+}

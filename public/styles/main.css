@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: white;
+  background: #36cf82;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body,
+label {
+  font: 800 1.8rem/1 "Nunito", sans-serif;
+}
