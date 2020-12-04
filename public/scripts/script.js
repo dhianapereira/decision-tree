@@ -8,8 +8,6 @@ function loadData() {
       categoryAttr: "class",
     };
 
-    console.log(config);
-
     var patient = {
       age: 30,
       menopause: "premeno",
@@ -20,7 +18,7 @@ function loadData() {
     };
 
     var decisionTree = new dt.DecisionTree(config);
-    console.log(decisionTree.root);
+    
     var decisionTreePrediction = decisionTree.predict(patient);
 
     document.getElementById("testingItem").innerHTML =
@@ -76,7 +74,7 @@ function loadData() {
         tree.predicateName,
         " ",
         tree.pivot,
-        " ?</b>",
+        "</b>",
         "</a>",
         "<ul>",
         "<li>",

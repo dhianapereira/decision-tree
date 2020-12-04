@@ -13,7 +13,7 @@
   margin: 6.4rem auto;
   padding: 8rem;
 
-  width: 90rem;
+  width: 70rem;
 
   border-radius: 2rem;
   overflow: hidden;
@@ -22,9 +22,8 @@
 
   display: grid;
   grid-template-columns: repeat(1fr, 1fr);
-  column-gap: 2.6rem;
-  align-items: center;
-  justify-content: center;
+  column-gap: 1.6rem;
+  justify-content: space-between;
 }
 
 .different-color{
