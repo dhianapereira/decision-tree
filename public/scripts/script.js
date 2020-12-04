@@ -21,29 +21,29 @@ function loadData() {
     
     var decisionTreePrediction = decisionTree.predict(patient);
 
-    document.getElementById("testingItem").innerHTML =
-      "<td>" +
-      patient.age +
-      "</td>" +
-      "<td>" +
-      patient.menopause +
-      "</td>" +
-      "<td>" +
-      patient.tumorSize +
-      "</td>" +
-      "<td>" +
-      patient.degMalig +
-      "</td>" +
-      "<td>" +
-      patient.breast +
-      "</td>" +
-      "<td>" +
-      patient.breastQuad +
-      "</td>";
+    // document.getElementById("testingItem").innerHTML =
+    //   "<td>" +
+    //   patient.age +
+    //   "</td>" +
+    //   "<td>" +
+    //   patient.menopause +
+    //   "</td>" +
+    //   "<td>" +
+    //   patient.tumorSize +
+    //   "</td>" +
+    //   "<td>" +
+    //   patient.degMalig +
+    //   "</td>" +
+    //   "<td>" +
+    //   patient.breast +
+    //   "</td>" +
+    //   "<td>" +
+    //   patient.breastQuad +
+    //   "</td>";
 
-    document.getElementById(
-      "decisionTreePrediction"
-    ).innerHTML = decisionTreePrediction;
+    // document.getElementById(
+    //   "decisionTreePrediction"
+    // ).innerHTML = decisionTreePrediction;
 
     document.getElementById("displayTree").innerHTML = treeToHtml(
       decisionTree.root
