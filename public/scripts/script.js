@@ -13,7 +13,7 @@ function loadData() {
     var patient = {
       age: 30,
       menopause: "premeno",
-      tumorSize: [30, 31, 32, 33, 34],
+      tumorSize: 33,
       degMalig: 3,
       breast: "left",
       breastQuad: "left_low",
