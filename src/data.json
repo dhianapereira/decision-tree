@@ -1,10 +1,10 @@
 [
   {
     "class": "no-recurrence-events",
-    "age": 30,
+    "age": 49,
     "menopause": "premeno",
-    "tumorSize": 30,
-    "degMalig": 3,
+    "tumorSize": 20,
+    "degMalig": 2,
     "breast": "left",
     "breastQuad": "left_low"
   },
@@ -12,117 +12,282 @@
     "class": "no-recurrence-events",
     "age": 40,
     "menopause": "premeno",
-    "tumorSize": 20,
+    "tumorSize": 24,
     "degMalig": 2,
     "breast": "right",
     "breastQuad": "right_up"
+    
   },
   {
-    "class": "no-recurrence-events",
-    "age": 41,
-    "menopause": "premeno",
-    "tumorSize": 21,
-    "degMalig": 2,
-    "breast": "left",
-    "breastQuad": "left_low"
-  },
-  {
-    "class": "no-recurrence-events",
-    "age": 60,
-    "menopause": "ge40",
-    "tumorSize": 15,
-    "degMalig": 2,
-    "breast": "right",
-    "breastQuad": "left_up"
-  },
-  {
-    "class": "no-recurrence-events",
-    "age": 42,
-    "menopause": "premeno",
-    "tumorSize": 0,
-    "degMalig": 2,
-    "breast": "right",
-    "breastQuad": "right_low"
-  },
-  {
-    "class": "no-recurrence-events",
-    "age": 61,
-    "menopause": "ge40",
-    "tumorSize": 16,
-    "degMalig": 2,
-    "breast": "left",
-    "breastQuad": "left_low"
-  },
-  {
-    "class": "no-recurrence-events",
+    "class": "recurrence-events",
     "age": 50,
     "menopause": "premeno",
-    "tumorSize": 25,
+    "tumorSize": 19,
     "degMalig": 2,
     "breast": "left",
     "breastQuad": "left_low"
   },
   {
     "class": "no-recurrence-events",
-    "age": 62,
-    "menopause": "ge40",
-    "tumorSize": 20,
-    "degMalig": 1,
-    "breast": "left",
-    "breastQuad": "left_low"
-  },
-  {
-    "class": "no-recurrence-events",
-    "age": 43,
-    "menopause": "premeno",
-    "tumorSize": 54,
-    "degMalig": 2,
-    "breast": "left",
-    "breastQuad": "left_low"
-  },
-  {
-    "class": "no-recurrence-events",
-    "age": 44,
+    "age": 40,
     "menopause": "premeno",
     "tumorSize": 24,
     "degMalig": 2,
     "breast": "right",
-    "breastQuad": "left_up"
+    "breastQuad": "right_up"
+    
   },
   {
     "class": "no-recurrence-events",
-    "age": 45,
+    "age": 40,
     "menopause": "premeno",
-    "tumorSize": 1,
-    "degMalig": 3,
-    "breast": "left",
-    "breastQuad": "central"
-  },
-  {
-    "class": "no-recurrence-events",
-    "age": 59,
-    "menopause": "ge40",
-    "tumorSize": 28,
+    "tumorSize": 24,
     "degMalig": 2,
-    "breast": "left",
-    "breastQuad": "left_low"
-  },
-  {
-    "class": "no-recurrence-events",
-    "age": 66,
-    "menopause": "lt40",
-    "tumorSize": 14,
-    "degMalig": 1,
-    "breast": "left",
+    "breast": "right",
     "breastQuad": "right_up"
   },
   {
     "class": "no-recurrence-events",
-    "age": 55,
-    "menopause": "ge40",
-    "tumorSize": 25,
-    "degMalig": 3,
-    "breast": "left",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
+    "breastQuad": "right_up"
+    
+  },
+  {
+    "class": "no-recurrence-events",
+    "age": 40,
+    "menopause": "premeno",
+    "tumorSize": 24,
+    "degMalig": 2,
+    "breast": "right",
     "breastQuad": "right_up"
   }
 ]
