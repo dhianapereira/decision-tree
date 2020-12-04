@@ -1,99 +1,96 @@
 function loadData() {
   var data = [];
-  
+
   $.getJSON("../../src/data.json", function (json) {
     data = json;
-    console.log(data);
-  });
+    var config = {
+      trainingSet: data,
+      categoryAttr: "class",
+    };
 
-  drawingTheDecisionTree(data);
-}
+    console.log(config);
 
-function drawingTheDecisionTree(data) {
-  var config = {
-    trainingSet: data,
-    categoryAttr: "class",
-  };
+    var patient = {
+      age: 30,
+      menopause: "premeno",
+      tumorSize: [30, 31, 32, 33, 34],
+      degMalig: 3,
+      breast: "left",
+      breastQuad: "left_low",
+    };
 
-  var decisionTree = new dt.DecisionTree(config);
+    var decisionTree = new dt.DecisionTree(config);
+    console.log(decisionTree.root);
+    var decisionTreePrediction = decisionTree.predict(patient);
 
-  var patient = {
-    age: [30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
-    menopause: "premeno",
-    tumorSize: [30, 31, 32, 33, 34],
-    degMalig: 3,
-    breast: "left",
-    breastQuad: "left_low",
-  };
+    document.getElementById("testingItem").innerHTML =
+      "<td>" +
+      patient.age +
+      "</td>" +
+      "<td>" +
+      patient.menopause +
+      "</td>" +
+      "<td>" +
+      patient.tumorSize +
+      "</td>" +
+      "<td>" +
+      patient.degMalig +
+      "</td>" +
+      "<td>" +
+      patient.breast +
+      "</td>" +
+      "<td>" +
+      patient.breastQuad +
+      "</td>";
 
-  document.getElementById("testingItem").innerHTML =
-    "<td>" +
-    patient.age +
-    "</td>" +
-    "<td>" +
-    patient.menopause +
-    "</td>" +
-    "<td>" +
-    patient.tumorSize +
-    "</td>" +
-    "<td>" +
-    patient.degMalig +
-    "</td>" +
-    "<td>" +
-    patient.breast +
-    "</td>" +
-    "<td>" +
-    patient.breastQuad +
-    "</td>";
+    document.getElementById(
+      "decisionTreePrediction"
+    ).innerHTML = decisionTreePrediction;
 
-  var decisionTreePrediction = decisionTree.predict(patient);
+    document.getElementById("displayTree").innerHTML = treeToHtml(
+      decisionTree.root
+    );
 
-  document.getElementById("decisionTreePrediction").innerHTML = decisionTreePrediction;
+    function treeToHtml(tree) {
+      if (tree.category) {
+        return [
+          "<ul>",
+          "<li>",
+          '<a href="#">',
+          "<b>",
+          tree.category,
+          "</b>",
+          "</a>",
+          "</li>",
+          "</ul>",
+        ].join("");
+      }
 
-
-  document.getElementById("displayTree").innerHTML = treeToHtml(
-    decisionTree.root
-  );
-
-  function treeToHtml(tree) {
-    if (tree.category) {
       return [
         "<ul>",
         "<li>",
         '<a href="#">',
         "<b>",
-        tree.category,
-        "</b>",
+        tree.attribute,
+        " ",
+        tree.predicateName,
+        " ",
+        tree.pivot,
+        " ?</b>",
         "</a>",
+        "<ul>",
+        "<li>",
+        '<a href="#">yes</a>',
+        treeToHtml(tree.match),
+        "</li>",
+        "<li>",
+        '<a href="#">no</a>',
+        treeToHtml(tree.notMatch),
+        "</li>",
+        "</ul>",
         "</li>",
         "</ul>",
       ].join("");
     }
-
-    return [
-      "<ul>",
-      "<li>",
-      '<a href="#">',
-      "<b>",
-      tree.attribute,
-      " ",
-      tree.predicateName,
-      " ",
-      tree.pivot,
-      " ?</b>",
-      "</a>",
-      "<ul>",
-      "<li>",
-      '<a href="#">yes</a>',
-      treeToHtml(tree.match),
-      "</li>",
-      "<li>",
-      '<a href="#">no</a>',
-      treeToHtml(tree.notMatch),
-      "</li>",
-      "</ul>",
-      "</li>",
-      "</ul>",
-    ].join("");
-  }
+  });
 }
