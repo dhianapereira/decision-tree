@@ -71,3 +71,17 @@
 
   border-radius: 5px;
 }
+
+.tree li a:hover,
+.tree li a:hover + ul li a {
+  background: #36cf82;
+  color: #000;
+  border: 1px solid #2e2866;
+}
+
+.tree li a:hover + ul li::after,
+.tree li a:hover + ul li::before,
+.tree li a:hover + ul::before,
+.tree li a:hover + ul ul::before {
+  border-color: #2e2866;
+}
