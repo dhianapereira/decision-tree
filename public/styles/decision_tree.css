@@ -1,5 +1,5 @@
 .tree ul {
-  padding-top: 20px;
+  padding-top: 2rem;
   position: relative;
   display: flex;
 }
@@ -66,7 +66,7 @@
   padding: 5px 10px;
   text-decoration: none;
   color: #2e2866;
-  font: 600 1.1rem/1 "Nunito", sans-serif;
+  font: 600 1.1rem/1 "Poppins", sans-serif;
   display: inline-block;
 
   border-radius: 5px;

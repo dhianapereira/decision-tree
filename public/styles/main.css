@@ -7,14 +7,45 @@
 body {
   height: 100vh;
   color: #000;
-  background: #fff; 
+  background: #f0f2f5;
+  font-family: "Poppins", sans-serif;
 }
 
-:root {
-  font-size: 62.5%;
+html {
+  font-size: 87.5%;
 }
 
-body,
-label {
-  font: 800 1.8rem/1 "Nunito", sans-serif;
+header {
+  color: #fff;
+  background: #095379;
+  text-align: center;
+  padding: 2rem 0 2rem;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: min(90vw, 800px);
+
+  margin: auto;
+}
+
+#info{
+  width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+#decisionTree{
+  float: left;
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 93.75%;
+  }
 }

@@ -3,47 +3,35 @@ function loadData() {
 
   $.getJSON("../../src/data.json", function (json) {
     data = json;
-    var config = {
-      trainingSet: data,
-      categoryAttr: "class",
-    };
 
-    var patient = {
-      age: 30,
-      menopause: "premeno",
-      tumorSize: 33,
-      degMalig: 3,
-      breast: "left",
-      breastQuad: "left_low",
+    const training = data.splice(0, 40);
+    console.log(training);
+
+    const test = data;
+    console.log(test);
+
+    var config = {
+      trainingSet: training,
+      categoryAttr: "class",
     };
 
     var decisionTree = new dt.DecisionTree(config);
 
-    var decisionTreePrediction = decisionTree.predict(patient);
+    var result = []
 
-    document.getElementById("testingItem").innerHTML =
+
+    for(let i = 0; i<test.length; i++){
+      result.push(decisionTree.predict(test[i]));
+    }
+
+    console.log(result);
+
+    result.forEach(function (decisionTreePredict){
+      document.getElementById("patientTable").innerHTML +=
       "<td>" +
-      patient.age +
-      "</td>" +
-      "<td>" +
-      patient.menopause +
-      "</td>" +
-      "<td>" +
-      patient.tumorSize +
-      "</td>" +
-      "<td>" +
-      patient.degMalig +
-      "</td>" +
-      "<td>" +
-      patient.breast +
-      "</td>" +
-      "<td>" +
-      patient.breastQuad +
+      decisionTreePredict +
       "</td>";
-
-    document.getElementById(
-      "decisionTreePrediction"
-    ).innerHTML = decisionTreePrediction;
+    });
 
     document.getElementById("displayTree").innerHTML = treeToHtml(
       decisionTree.root
