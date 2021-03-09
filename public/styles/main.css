@@ -28,22 +28,6 @@ header {
   justify-content: center;
 }
 
-.container {
-  width: min(90vw, 800px);
-
-  margin: auto;
-}
-
-#info{
-  width: 100%;
-  overflow-x: auto;
-  padding: 1rem;
-}
-
-#decisionTree{
-  float: left;
-}
-
 @media (min-width: 800px) {
   html {
     font-size: 93.75%;

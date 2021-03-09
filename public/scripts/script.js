@@ -1,37 +1,32 @@
 function loadData() {
   var data = [];
 
-  $.getJSON("../../src/data.json", function (json) {
+  $.getJSON("../../src/breast-cancer.json", function (json) {
     data = json;
 
-    const training = data.splice(0, 40);
+    const training = data.splice(0, 400);
+    console.log("Dados para o treinamento: ");
     console.log(training);
 
     const test = data;
+    console.log("Dados para o teste: ");
     console.log(test);
 
     var config = {
       trainingSet: training,
+      ignoredAttributes: ["id"],
       categoryAttr: "class",
     };
 
     var decisionTree = new dt.DecisionTree(config);
 
-    var result = []
+    var result = [];
 
-
-    for(let i = 0; i<test.length; i++){
+    for (let i = 0; i < test.length; i++) {
       result.push(decisionTree.predict(test[i]));
     }
 
-    console.log(result);
-
-    result.forEach(function (decisionTreePredict){
-      document.getElementById("patientTable").innerHTML +=
-      "<td>" +
-      decisionTreePredict +
-      "</td>";
-    });
+    console.log("Resultado da Predição: " + result);
 
     document.getElementById("displayTree").innerHTML = treeToHtml(
       decisionTree.root
