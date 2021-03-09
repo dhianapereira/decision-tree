@@ -15,19 +15,6 @@ html {
   font-size: 87.5%;
 }
 
-header {
-  color: #fff;
-  background: #095379;
-  text-align: center;
-  padding: 2rem 0 2rem;
-  width: 100%;
-
-  display: grid;
-  grid-template-columns: repeat(1fr, 1fr);
-  align-items: center;
-  justify-content: center;
-}
-
 @media (min-width: 800px) {
   html {
     font-size: 93.75%;

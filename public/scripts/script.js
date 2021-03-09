@@ -26,7 +26,15 @@ function loadData() {
       result.push(decisionTree.predict(test[i]));
     }
 
-    console.log("Resultado da Predição: " + result);
+    let counter = 0;
+    for (let i = 0; i < result.length; i++) {
+      if (result[i] == test[i]["class"]) {
+        counter++;
+      }
+    }
+
+    const percentage = (counter * 100) / result.length;
+    console.log("Taxa de acerto:" + percentage + "%");
 
     document.getElementById("displayTree").innerHTML = treeToHtml(
       decisionTree.root
