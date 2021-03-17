@@ -34,7 +34,7 @@ function loadData() {
     }
 
     const percentage = (counter * 100) / result.length;
-    console.log("Taxa de acerto:" + percentage + "%");
+    console.log("Porcentagem de acerto:" + percentage + "%");
 
     document.getElementById("displayTree").innerHTML = treeToHtml(
       decisionTree.root
